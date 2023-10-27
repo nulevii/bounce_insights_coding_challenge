@@ -1,7 +1,7 @@
-import { COUNTRIES_LIST_URL } from "../urls";
-import { ICountriesList } from "./countrie-search.types";
-import SelectBlock from "./select-block";
-import { Providers } from "./provider";
+import { COUNTRIES_LIST_URL } from "./urls";
+import { ICountriesList } from "./country-search/countrie-search.types";
+import SelectBlock from "./country-search/select-block";
+import { Providers } from "./country-search/provider";
 
 async function getCountryNames() {
     const res = await fetch(COUNTRIES_LIST_URL, { next: { revalidate: 1 } });
