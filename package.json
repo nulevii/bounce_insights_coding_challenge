@@ -8,7 +8,6 @@
     "start:backend": "cd ../backend && npm run start",
     "start:frontend": "next start",
     "start": "npm-run-all --parallel start:*",
-    "build:backend": "cd ../backend && npm run build && npm run start",
     "build:frontend": "next build",
     "build":"npm-run-all --parallel build:*"
   },
