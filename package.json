@@ -8,8 +8,8 @@
     "start:backend": "cd ../backend && npm run start",
     "start:frontend": "next start",
     "start": "npm-run-all --parallel start:*",
-    "build:frontend": "next build",
-    "build":"npm-run-all --parallel build:*"
+    "build": "next build"
+
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
