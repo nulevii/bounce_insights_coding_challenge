@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "/backend/vercel_midlware.ts"
+      "destination": "/api/server.js"
     }
   ]
 }
