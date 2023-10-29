@@ -12,7 +12,7 @@ const app = express();
 
 app.use(cors())
 
-app.get("/countries", async (req: Request, res: Response) => {
+app.get("/api/countries", async (req: Request, res: Response) => {
     try {
         const response = await axios.get(COUNTRIES_LIST_URL);
         const data = response.data;
@@ -23,7 +23,7 @@ app.get("/countries", async (req: Request, res: Response) => {
     }
 });
 
-app.get("/country/:code", async (req: Request, res: Response) => {
+app.get("/api/country/:code", async (req: Request, res: Response) => {
     const { code } = req.params;
     try {
         const response = await axios.get(`${COUTRY_URL}${code}`);
@@ -45,3 +45,5 @@ app.get("/country/:code", async (req: Request, res: Response) => {
 
   const server = startServer({ port: 3001 });
   process.title = 'myApp';
+
+  export default app
