@@ -1,8 +1,8 @@
 {
-  "rewrites:": [
+  "rewrites": [
     {
       "source": "/api/*",
       "destination": "/backend/vercel_midlware.ts"
     }
   ]
-}
+},
