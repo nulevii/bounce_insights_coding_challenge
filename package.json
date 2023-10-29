@@ -1,35 +1,36 @@
 {
-  "name": "bounce-insights-coding-challenge",
+  "name": "next-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "lint": "next lint",
-    "start:backend": "cd ../backend && npm run start",
+    "start:backend": "cd ./backend && npm run start",
     "start:frontend": "next start",
     "start": "npm-run-all --parallel start:*",
-    "build:backend": "cd ../backend && npm run build && npm run start",
-    "build:frontend":"npm-run-all --parallel build:*",
     "build": "next build"
-
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.7",
-    "next": "13.5.6",
-    "nextjs-cors": "^2.1.2",
-    "npm-run-all": "^4.1.5",
+    "cors": "^2.8.5",
+    "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-redux": "^8.1.3",
     "react-select": "^5.7.7"
   },
   "devDependencies": {
+    "@reduxjs/toolkit": "^1.9.7",
+    "@types/cors": "^2.8.15",
+    "@types/express": "^4.17.20",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "axios": "^1.6.0",
     "eslint": "^8",
-    "eslint-config-next": "13.5.6",
+    "eslint-config-next": "14.0.0",
+    "express": "^4.18.2",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8",
     "tailwindcss": "^3",
     "typescript": "^5"
